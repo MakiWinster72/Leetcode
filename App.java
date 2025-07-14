@@ -1,12 +1,15 @@
-import Interview.T121.Solution;
+import Interview.T14.Solution;
 
 public class App {
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        Solution solution = new Solution();
 
-        int[] prices = {7, 2, 100, 1, 6, 4};
-        int res = sol.maxProfit(prices);
+        String[] input1 = {"flower", "flow", "flight"};
+        String[] input2 = {"dog", "racecar", "car"};
+        String[] input3 = {"interview", "internet", "internal", "interval"};
 
-        System.out.println("最大利润是: " + res);
+        System.out.println("测试1: " + solution.longestCommonPrefix(input1)); // fl
+        System.out.println("测试2: " + solution.longestCommonPrefix(input2)); // （空字符串）
+        System.out.println("测试3: " + solution.longestCommonPrefix(input3)); // inte
     }
 }

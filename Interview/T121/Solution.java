@@ -1,4 +1,4 @@
-package Interview.T122;
+package Interview.T121;
 
 public class Solution {
     public int maxProfit(int[] prices) {
