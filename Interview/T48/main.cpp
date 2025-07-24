@@ -1,0 +1,19 @@
+#include <vector>
+
+class Solution {
+public:
+  void rotate(vector<vector<int>> &matrix) {
+
+    int n = matrix.size();
+    // 转置矩阵
+    for (int i = 0; i < n; ++i) {
+      for (int j = i + 1; j < n; ++j) {
+        swap(matrix[i][j], matrix[j][i]);
+      }
+    }
+    // 水平翻转每一行
+    for (int i = 0; i < n; ++i) {
+      reverse(matrix[i].begin(), matrix[i].end());
+    }
+  }
+};
